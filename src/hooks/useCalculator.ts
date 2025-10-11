@@ -125,8 +125,6 @@ export function useCalculator() {
    */
   const processOperator = useCallback((operator: BasicOperator) => {
     setState(prev => {
-      if (prev.buffer === '0') return prev
-
       const currentValue = parseFloat(prev.buffer)
 
       if (prev.runningTotal === 0) {
@@ -136,10 +134,10 @@ export function useCalculator() {
           previousOperator: operator,
           buffer: '0',
         }
-      } else {
+      } else if (prev.previousOperator) {
         try {
           const result = applyOperation(
-            prev.previousOperator!,
+            prev.previousOperator,
             prev.runningTotal,
             currentValue
           )
@@ -156,6 +154,13 @@ export function useCalculator() {
             buffer: 'Error',
             error: true,
           }
+        }
+      } else {
+        return {
+          ...prev,
+          runningTotal: currentValue,
+          previousOperator: operator,
+          buffer: '0',
         }
       }
     })
