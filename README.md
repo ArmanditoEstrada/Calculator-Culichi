@@ -1,9 +1,5 @@
 # Culichi iOS Calculator 🧮
 
-<div align="center">
-  <img src="iconoCalaculadora.jpg" alt="Calculator Icon" width="150"/>
-</div>
-
 ![Demo](calculator.gif)
 
 ![Animation Demo](Animation.gif)
