@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Calculadora iOS-style con funciones científicas y conversión de unidades" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Vincula la hoja de estilos principal -->
+    <link rel="stylesheet" href="style.css">
     <title>Calculator Culichi</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
+</head>
+<body>
+    <!-- 
+        Pantalla de bienvenida (Splash Screen)
+        Esta pantalla aparece al inicio para mostrar el nombre de la aplicación.
+    -->
+    <div class="splash-screen" id="splashScreen">
+        <div class="splash-content">
+            <h1>MAC</h1>
+        </div>
+    </div>
+
+    <!-- 
+        Contenedor principal de la calculadora.
+        Aquí se agrupan todos los elementos interactivos y visuales.
+    -->
+    <div class="wrapper">
 
         <!-- 
             Botón flotante de menú (abajo a la izquierda).
