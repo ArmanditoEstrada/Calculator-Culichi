@@ -50,30 +50,6 @@ Full keyboard navigation and input support:
 - 📲 **Responsive Design** - Adapts to different screen sizes and devices
 - ♿ **Accessibility** - Proper ARIA labels and keyboard navigation
 
-## 🚀 Quick Start
-
-### Installation
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/ByCulichi/Calculator-Culichi.git
-   cd Calculator-Culichi
-   ```
-
-2. **Open in browser**:
-   - Simply open `index.html` in any modern web browser
-   - Or use a local server for optimal performance:
-   ```bash
-   # Using Python
-   python -m http.server 8000
-   # Then visit http://localhost:8000
-   
-   # Using Node.js
-   npx serve
-   
-   # Using PHP
-   php -S localhost:8000
-   ```
-
 ### Usage
 
 1. **Basic Calculations**: Use the numeric keypad and operator buttons for standard math
