@@ -1,337 +1,289 @@
 # Culichi iOS Calculator 🧮
 
 <div align="center">
-  <img src="public/iconoCalaculadora.jpg" alt="Calculator Icon" width="150"/>
+  <img src="iconoCalaculadora.jpg" alt="Calculator Icon" width="150"/>
 </div>
 
-![Demo](public/calculator.gif)
+![Demo](calculator.gif)
 
-![Animation Demo](public/Animation.gif)
+![Animation Demo](Animation.gif)
 
-> Una calculadora web sofisticada inspirada en iOS con múltiples modos de cálculo y funciones avanzadas.  
-> Construida con **Vite + React + TypeScript + Tailwind CSS**
+> A sophisticated iOS-inspired web calculator application with multiple calculation modes and advanced features.
 
-## ✨ Características
+## ✨ Features
 
-- **Calculadora Estándar**: Operaciones aritméticas básicas (+, −, ×, ÷)
-- **Modo Científico**: Funciones trigonométricas, logaritmos y exponenciación
-- **Conversión de Unidades**: Conversiones de temperatura, distancia y peso
-- **Historial de Cálculos**: Guarda y revisa cálculos pasados
-- **Soporte de Teclado**: Soporte completo de teclado físico para entrada rápida
-- **Diseño Inspirado en iOS**: Interfaz moderna y elegante siguiendo el lenguaje de diseño de Apple
-- **Diseño Responsivo**: Optimizado para dispositivos de escritorio y móviles
-- **Accesibilidad**: Etiquetas ARIA completas y navegación por teclado
+### 🔢 **Three Calculation Modes**
+- **Basic Mode**: Standard arithmetic operations for everyday calculations
+- **Scientific Mode**: Advanced mathematical functions for complex calculations  
+- **Conversion Mode**: Unit conversions for practical applications
 
-## 🛠️ Stack Tecnológico
+### 🧮 **Basic Operations**
+- ➕ **Addition, Subtraction, Multiplication, Division** - All standard arithmetic operations
+- 🔢 **Decimal Point Support** - Handles floating-point numbers with precision
+- ➕➖ **Toggle Plus/Minus** - Quickly switch between positive and negative numbers
+- 📊 **Percentage Calculations** - Convert numbers to percentages instantly
+- ↩️ **Backspace Function** - Delete individual digits for easy correction
 
-- **Framework**: React 18.3+ con TypeScript
-- **Build Tool**: Vite 6.0+
-- **Estilos**: Tailwind CSS 3.4+
-- **Linting**: ESLint con TypeScript
-- **Formateo**: Prettier
-- **Type Safety**: TypeScript en modo strict
+### 🔬 **Scientific Functions**
+- 📐 **Trigonometric Functions**: `sin`, `cos`, `tan` (input in degrees)
+- 📈 **Logarithmic Functions**: `log` (base 10), `ln` (natural logarithm)
+- √ **Root Functions**: Square root (`√`) and power functions (`x²`)
+- 🔢 **Mathematical Constants**: π (Pi) and e (Euler's number)
 
-## 🚀 Inicio Rápido
+### 🔄 **Unit Conversions**
+- 🌡️ **Temperature**: Celsius to Fahrenheit (`°C→°F`)
+- 📏 **Distance**: Kilometers to Miles (`km→mi`), Meters to Feet (`m→ft`)
+- ⚖️ **Weight**: Kilograms to Pounds (`kg→lb`)
 
-### Prerequisitos
+### 💾 **History and Memory**
+- 📋 **Calculation History** - Automatic storage of all calculations
+- ✏️ **Edit Previous Calculations** - Reload last calculation for editing
+- 🗑️ **Clear History** - Remove all stored calculations with confirmation
+- 📅 **Time Filtering** - View calculations from last 7 or 30 days
 
-- Node.js 18.0 o superior
-- npm o yarn
+### ⌨️ **Keyboard Support**
+Full keyboard navigation and input support:
+- **Numbers**: `0-9` for digit entry
+- **Operations**: `+`, `-`, `*`, `/` for mathematical operations
+- **Functions**: `Enter` or `=` for equals, `Escape` to clear, `Backspace` to delete
+- **Special**: `.` for decimal point, `%` for percentage
 
-### Instalación
+### 🎨 **Modern UI/UX**
+- 📱 **iOS-Inspired Design** - Familiar calculator interface with modern aesthetics
+- 🌑 **Dark Theme** - Easy on the eyes with high contrast for visibility
+- 🟠 **Orange Accent Colors** - Distinctive operator buttons following iOS design
+- ↗️ **Smooth Animations** - Fluid transitions and responsive feedback
+- 📲 **Responsive Design** - Adapts to different screen sizes and devices
+- ♿ **Accessibility** - Proper ARIA labels and keyboard navigation
 
-1. **Clonar el repositorio**:
+## 🚀 Quick Start
+
+### Installation
+1. **Clone the repository**:
    ```bash
    git clone https://github.com/ByCulichi/Calculator-Culichi.git
    cd Calculator-Culichi
    ```
 
-2. **Instalar dependencias**:
+2. **Open in browser**:
+   - Simply open `index.html` in any modern web browser
+   - Or use a local server for optimal performance:
    ```bash
-   npm install
-   ```
-
-3. **Iniciar servidor de desarrollo**:
-   ```bash
-   npm run dev
-   ```
+   # Using Python
+   python -m http.server 8000
+   # Then visit http://localhost:8000
    
-   La aplicación estará disponible en `http://localhost:5173`
+   # Using Node.js
+   npx serve
+   
+   # Using PHP
+   php -S localhost:8000
+   ```
 
-### Scripts Disponibles
+### Usage
 
-```bash
-# Desarrollo - Inicia servidor con hot reload
-npm run dev
+1. **Basic Calculations**: Use the numeric keypad and operator buttons for standard math
+2. **Mode Switching**: Tap the mode selector at the bottom to switch between Basic, Scientific, and Conversion modes
+3. **History Access**: Click the hamburger menu (☰) at the top left to view calculation history
+4. **Keyboard Input**: Use your physical keyboard for faster entry
+5. **Unit Conversion**: Switch to Conversion mode and enter a value, then tap the conversion button
 
-# Build - Compila para producción
-npm run build
+## 🎯 Keyboard Shortcuts
 
-# Preview - Vista previa del build de producción
-npm run preview
+| Key | Function |
+|-------|---------|
+| `0-9` | Numeric input |
+| `+` | Addition |
+| `-` | Subtraction |
+| `*` | Multiplication |
+| `/` | Division |
+| `=` or `Enter` | Calculate result |
+| `Escape` | Clear (AC) |
+| `Backspace` | Delete last digit |
+| `.` | Decimal point |
+| `%` | Percentage |
 
-# Lint - Verifica código con ESLint
-npm run lint
-```
+## 🛠️ Technical Specifications
 
-## 📁 Estructura del Proyecto
+### Technologies Used
+- **HTML5**: Semantic markup with accessibility features
+- **CSS3**: Modern styles with custom properties (CSS variables), Grid layout and animations
+- **Vanilla JavaScript**: Pure JavaScript (ES6+) with no external dependencies
+
+### Browser Compatibility
+- ✅ **Chrome/Edge**: 88+ (Full support)
+- ✅ **Firefox**: 78+ (Full support) 
+- ✅ **Safari**: 14+ (Full support)
+- ✅ **Mobile Browsers**: iOS Safari 14+, Chrome Mobile 88+
+
+### Performance Features
+- 🚀 **Zero Dependencies** - No external libraries, loads instantly
+- 💾 **Local Storage** - History persisted in browser storage
+- ⚡ **Lightweight** - Total size < 50KB for all assets
+- 📱 **PWA Ready** - Can be installed as mobile app
+
+## 📁 Project Structure
 
 ```
 Calculator-Culichi/
-├── public/                      # Archivos estáticos
-│   ├── iconoCalaculadora.jpg    # Icono de la calculadora
-│   ├── Animation.gif            # Animación demo
-│   └── calculator.gif           # Demo de la calculadora
-├── src/
-│   ├── components/              # Componentes React
-│   │   ├── Button.tsx           # Botón individual
-│   │   ├── Display.tsx          # Pantalla de la calculadora
-│   │   ├── History.tsx          # Panel lateral de historial
-│   │   ├── Keypad.tsx           # Teclado completo
-│   │   ├── ModeMenu.tsx         # Menú flotante de modos
-│   │   └── SplashScreen.tsx     # Pantalla de bienvenida
-│   ├── hooks/
-│   │   └── useCalculator.ts     # Hook personalizado para lógica
-│   ├── types/
-│   │   └── calculator.ts        # Definiciones TypeScript
-│   ├── utils/
-│   │   └── calculator.ts        # Funciones puras de cálculo
-│   ├── App.tsx                  # Componente principal
-│   ├── main.tsx                 # Punto de entrada
-│   ├── styles.css               # Estilos globales con Tailwind
-│   └── vite-env.d.ts            # Declaraciones de tipos
-├── .editorconfig                # Configuración del editor
-├── .prettierrc                  # Configuración de Prettier
-├── eslint.config.js             # Configuración de ESLint
-├── index.html                   # HTML principal
-├── package.json                 # Dependencias y scripts
-├── postcss.config.js            # Configuración de PostCSS
-├── tailwind.config.js           # Configuración de Tailwind
-├── tsconfig.json                # Configuración de TypeScript
-├── tsconfig.node.json           # TypeScript para Node
-├── vite.config.ts               # Configuración de Vite
-└── README.md                    # Este archivo
+├── index.html          # Main HTML structure with complete comments
+├── style.css           # Complete styles with CSS variables and responsive design
+├── script.js           # Calculator logic with detailed JSDoc documentation  
+├── iconoCalaculadora.jpg # Calculator icon for branding
+├── Animation.gif       # Animation demo for README
+└── README.md          # This documentation file
 ```
 
-## 🎯 Atajos de Teclado
+## 🔧 Code Architecture
 
-| Tecla | Acción |
-|-------|--------|
-| `0-9` | Entrada de dígitos |
-| `+` | Suma |
-| `-` | Resta |
-| `*` | Multiplicación |
-| `/` | División |
-| `Enter` o `=` | Calcular resultado |
-| `Escape` | Limpiar (AC) |
-| `Backspace` | Borrar último dígito |
-| `.` | Punto decimal |
-| `%` | Porcentaje |
+### JavaScript Modules
+- **Global State Management**: `buffer`, `runningTotal`, `previousOperator`, `calculatorHistory`
+- **Core Functions**: Calculation logic, screen updates, operation handling
+- **UI Controllers**: Sidebar management, mode switching, history operations
+- **Event Handlers**: Button clicks, keyboard input, splash screen management
+- **Utility Functions**: Message display, validation, format conversion
 
-## 🎨 Personalización con Tailwind
+### CSS Organization  
+- **CSS Custom Properties**: Centralized theme and color management
+- **Component Styles**: Modular styles for calculator, sidebar, buttons
+- **Responsive Design**: Mobile-first approach with flexible layouts
+- **Animations**: Smooth transitions and hover effects
 
-El proyecto utiliza un tema personalizado definido en `tailwind.config.js`:
+## 🤝 Contributing
 
+Contributions are welcome! Please feel free to submit a Pull Request. For major changes:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+### 🐛 Reporting Issues
+If you find a bug or have a suggestion:
+1. Check if a similar issue already exists
+2. Create a new issue with detailed description
+3. Include steps to reproduce the problem
+4. Add screenshots if relevant
+
+### 💡 Requesting Features
+To propose new features:
+1. Explain the use case
+2. Describe the proposed functionality
+3. Consider the impact on user experience
+
+## 📊 Detailed Features
+
+### Scientific Mode
+- **Trigonometric Functions**: Precise calculations of sine, cosine, and tangent
+- **Logarithms**: Base 10 and natural logarithm with high precision
+- **Powers and Roots**: Calculation of squares and square roots
+- **Constants**: Precise values of π and e for advanced calculations
+
+### History System
+- **Persistence**: Calculations are automatically saved in localStorage
+- **Time Filters**: View calculations by specific periods
+- **Editing**: Reuse previous calculations for new operations
+- **Management**: Selective or complete history clearing
+
+### Unit Conversions
+- **Temperature**: Precise °C to °F conversion with standard formula
+- **Distance**: Metric/Imperial conversions (km↔mi, m↔ft)  
+- **Weight**: kg↔lb conversion with exact conversion factors
+- **Intuitive Interface**: Dedicated buttons with informative messages
+
+## 🔍 Implementation Details
+
+### State Management
 ```javascript
-colors: {
-  'calculator-bg': '#F5F5F5',
-  'calculator-panel': '#000000',
-  'calculator-button-op': '#FF9500',
-  // ... más colores personalizados
-}
+// Global variables for calculator state
+let buffer = "0";           // Current number on screen
+let runningTotal = 0;       // Accumulated total
+let previousOperator = null; // Last operator used
+let calculatorHistory = []; // Operation history
 ```
 
-Los componentes utilizan clases de Tailwind y `@apply` para estilos reutilizables en `src/styles.css`.
+### Core Functions
+- **`handleSymbol()`**: Central input processor
+- **`updateScreen()`**: Interface update
+- **`processOperator()`**: Mathematical operation handling
+- **`toggleSidebar()`**: History menu control
 
-## 🔧 Arquitectura del Código
+### Events and Interactivity
+- Full physical keyboard support
+- Touch gestures for mobile devices
+- Visual feedback on interactions
+- Real-time input validation
 
-### Gestión de Estado
+## 📱 Mobile-First Features
 
-El hook personalizado `useCalculator` maneja todo el estado de la aplicación:
+### Responsive Design
+- **Breakpoints**: Optimized for mobile, tablet and desktop
+- **Touch Targets**: Buttons with minimum size of 44px
+- **Orientation**: Support for portrait and landscape
+- **Viewport**: Optimal configuration for mobile devices
 
-```typescript
-interface CalculatorState {
-  buffer: string                 // Número actual en pantalla
-  runningTotal: number           // Total acumulado
-  previousOperator: BasicOperator | null  // Último operador usado
-  calculatorHistory: string[]    // Historial de operaciones
-  error: boolean                 // Estado de error
-  overwrite: boolean             // Bandera de sobrescritura
-}
-```
+### Mobile Performance
+- **Fast Loading**: Optimized for slow connections
+- **Efficient Memory**: Careful resource management
+- **Battery**: Minimizes CPU usage with efficient animations
 
-### Componentes Principales
+## 🎨 Visual Style Guide
 
-- **App.tsx**: Componente raíz que integra todos los componentes
-- **Display**: Muestra el valor actual o mensajes temporales
-- **Keypad**: Contiene todos los botones organizados en una cuadrícula
-- **Button**: Componente reutilizable con variantes (default, operator, action, scientific)
-- **History**: Panel lateral deslizable con historial de cálculos
-- **ModeMenu**: Menú flotante para cambiar modos y activar conversiones
-- **SplashScreen**: Pantalla de bienvenida con animación
+### Color Palette
+- **Background**: `#000000` (Pure black for maximum contrast)
+- **Number Buttons**: `#333333` (Dark gray)
+- **Function Buttons**: `#A6A6A6` (Light gray) 
+- **Operator Buttons**: `#FF9500` (iOS Orange)
+- **Text**: `#FFFFFF` (White for legibility)
 
-### Funciones Puras
+### Typography
+- **Main Font**: SF Pro Display (iOS system)
+- **Fallbacks**: -apple-system, BlinkMacSystemFont, sans-serif
+- **Sizes**: Responsively scaled
+- **Weight**: Regular for numbers, Medium for operators
 
-Todas las operaciones matemáticas están en `src/utils/calculator.ts`:
+## 🧪 Testing and Quality
 
-- `applyOperation()`: Operaciones básicas
-- `applyScientificFunction()`: Funciones científicas
-- `applyConversion()`: Conversiones de unidades
-- `formatNumber()`: Formateo con locale es-MX
-- `isValidInput()`: Validación de entrada
+### Test Cases
+- ✅ Basic operations (addition, subtraction, multiplication, division)
+- ✅ Scientific functions with known values
+- ✅ Unit conversions with standard factors
+- ✅ History management (save, load, clear)
+- ✅ Complete keyboard navigation
+- ✅ Cross-browser compatibility
 
-## 📊 Funciones Detalladas
+### Code Standards
+- **JSDoc**: Complete function documentation
+- **Comments**: Explanations in Spanish for clarity
+- **Conventions**: Descriptive names and modular structure
+- **Accessibility**: ARIA labels and keyboard navigation
 
-### Modo Científico
-- **Funciones Trigonométricas**: Cálculos precisos de seno, coseno y tangente
-- **Logaritmos**: Logaritmo base 10 y logaritmo natural
-- **Potencias y Raíces**: Cálculo de cuadrados y raíces cuadradas
-- **Constantes**: Valores precisos de π y e
+## 📄 License
 
-### Sistema de Historial
-- **Persistencia**: Los cálculos se guardan automáticamente
-- **Filtros de Tiempo**: Ver cálculos por períodos específicos
-- **Edición**: Reutilizar cálculos previos
-- **Gestión**: Borrado selectivo o completo
+This project is open source and available under the [MIT License](LICENSE).
 
-### Conversiones de Unidades
-- **Temperatura**: Conversión precisa °C a °F
-- **Distancia**: Conversiones métricas/imperiales (km↔mi, m↔ft)
-- **Peso**: Conversión kg↔lb con factores exactos
-- **Interfaz Intuitiva**: Botones dedicados con mensajes informativos
-
-## 🧪 Calidad del Código
-
-### Type Safety
-
-El proyecto utiliza TypeScript en modo strict con tipos definidos para:
-- Operadores básicos y científicos
-- Estado de la calculadora
-- Props de componentes
-- Funciones de utilidad
-
-### Linting
-
-ESLint configurado con:
-- Reglas de TypeScript estrictas
-- React Hooks rules
-- React Refresh plugin
-
-### Formateo
-
-Prettier configurado para mantener consistencia:
-- Sin punto y coma
-- Comillas simples
-- 2 espacios de indentación
-- 80 caracteres por línea
-
-## 🌐 Accesibilidad
-
-- **ARIA Labels**: Todos los botones tienen etiquetas descriptivas
-- **ARIA Live**: La pantalla anuncia cambios para lectores de pantalla
-- **Navegación por Teclado**: Soporte completo de teclado
-- **Focus Visible**: Indicadores visuales claros de foco
-- **Contraste**: Colores con alto contraste para legibilidad
-
-## 🔄 Migración desde Vanilla JS
-
-Este proyecto fue migrado de Vanilla JavaScript a React + TypeScript:
-
-### Cambios Principales
-- ✅ Lógica de estado movida a hooks de React
-- ✅ DOM manipulation reemplazado por declarative React
-- ✅ Tipos TypeScript para toda la aplicación
-- ✅ CSS modular con Tailwind CSS
-- ✅ Build optimizado con Vite
-- ✅ Componentes reutilizables
-- ✅ Mejor separación de responsabilidades
-
-### Características Preservadas
-- ✅ Todas las funcionalidades originales
-- ✅ Diseño visual idéntico
-- ✅ Soporte de teclado completo
-- ✅ Accesibilidad ARIA
-- ✅ Conversiones de unidades
-- ✅ Modo científico
-- ✅ Sistema de historial
-
-## 🚀 Despliegue
-
-### Build de Producción
-
-```bash
-npm run build
-```
-
-Esto genera archivos optimizados en el directorio `dist/`:
-- HTML minificado
-- CSS optimizado y purgado (solo clases usadas)
-- JavaScript minificado y tree-shaken
-- Assets optimizados
-
-### Previsualización Local
-
-```bash
-npm run preview
-```
-
-Sirve el build de producción en `http://localhost:4173`
-
-### Opciones de Hosting
-
-El proyecto puede desplegarse en:
-- **Vercel**: `vercel --prod`
-- **Netlify**: Arrastra la carpeta `dist/`
-- **GitHub Pages**: Usa GitHub Actions
-- **Cualquier servidor estático**: Sube el contenido de `dist/`
-
-## 📝 Desarrollo
-
-### Agregar Nuevas Funciones
-
-1. Define tipos en `src/types/calculator.ts`
-2. Implementa lógica pura en `src/utils/calculator.ts`
-3. Actualiza el hook `useCalculator` si es necesario
-4. Agrega UI en componentes correspondientes
-
-### Personalizar Estilos
-
-1. Modifica colores en `tailwind.config.js`
-2. Ajusta componentes reutilizables en `src/styles.css`
-3. Usa clases de Tailwind en componentes
-
-### Ejecutar Linter
-
-```bash
-npm run lint
-```
-
-## 🤝 Contribuciones
-
-Las contribuciones son bienvenidas. Por favor:
-
-1. Fork el repositorio
-2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
-
-## 📄 Licencia
-
-Este proyecto es open source y está disponible bajo la [MIT License](LICENSE).
-
-## 👨‍💻 Autor
+## 👨‍💻 Author
 
 **Christian (ByCulichi)**
 - GitHub: [@ByCulichi](https://github.com/ByCulichi)
-- Proyecto: [Calculator-Culichi](https://github.com/ByCulichi/Calculator-Culichi)
+- Project: [Calculator-Culichi](https://github.com/ByCulichi/Calculator-Culichi)
 
-## 🙏 Agradecimientos
+## 🙏 Acknowledgments
 
-- Inspirado en la calculadora de iOS
-- Construido con herramientas modernas de desarrollo web
-- Comunidad de React, TypeScript y Tailwind CSS
+- Inspired by iOS calculator design
+- Developed with love for the Spanish-speaking community
+- Thanks to all contributors and users who report issues
 
 ---
 
-Hecho con ❤️ por ByCulichi
+*Built with ❤️ and modern web technologies*
+
+### 📞 Contact and Support
+
+Have questions or need help? 
+- 🐛 [Report a bug](https://github.com/ByCulichi/Calculator-Culichi/issues)
+- 💡 [Request a feature](https://github.com/ByCulichi/Calculator-Culichi/issues)
+- 📧 Contact the author through GitHub
+
+**Your feedback is valuable for improving the app! 🚀**
