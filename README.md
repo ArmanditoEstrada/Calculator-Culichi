@@ -2,8 +2,6 @@
 
 ![Demo](calculator.gif)
 
-![Animation Demo](Animation.gif)
-
 > A sophisticated iOS-inspired web calculator application with multiple calculation modes and advanced features.
 
 ## ✨ Features
