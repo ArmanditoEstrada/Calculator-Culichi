@@ -11,6 +11,7 @@
     <!-- 
         Pantalla de bienvenida (Splash Screen)
         Esta pantalla aparece al inicio para mostrar el nombre de la aplicación.
+        Es útil para dar una introducción visual al usuario antes de cargar la calculadora.
     -->
     <div class="splash-screen" id="splashScreen">
         <div class="splash-content">
@@ -60,6 +61,7 @@
                 <li>
                     <!-- 
                         Interruptor para activar/desactivar el modo de conversión de unidades.
+                        Este interruptor permite al usuario realizar conversiones como temperatura o distancia.
                     -->
                     <label class="fab-menu-switch">
                         <input type="checkbox" id="convertSwitch">
@@ -101,6 +103,7 @@
                 <section class="history-section">
                     <!-- 
                         Pestañas para seleccionar el periodo del historial a mostrar.
+                        Esto permite al usuario filtrar el historial por rango de tiempo.
                     -->
                     <div class="history-period-tabs">
                         <button class="period-tab active" data-period="recent">
@@ -112,6 +115,7 @@
                     </div>
                     <!-- 
                         Contenedor donde se cargan dinámicamente los cálculos realizados.
+                        Cada cálculo se muestra como un elemento individual.
                     -->
                     <div class="history-content" id="historyContent">
                         <!-- Ejemplo de historial -->
@@ -124,6 +128,7 @@
                     </div>
                     <!-- 
                         Acciones sobre el historial: editar o borrar.
+                        Los botones permiten al usuario gestionar el historial.
                     -->
                     <div class="history-actions">
                         <button class="history-action-btn edit-btn" id="editHistory">
